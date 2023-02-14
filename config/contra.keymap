@@ -5,8 +5,8 @@
 #define DEFAULT  0
 #define LAYER1 1
 #define LAYER2 2
-#define LAYER1 3
-#define LAYER2 4
+#define LAYER3 3
+#define LAYER4 4
 #define BT_CTRL 5
 
 / {
