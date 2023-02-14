@@ -5,7 +5,9 @@
 #define DEFAULT  0
 #define LAYER1 1
 #define LAYER2 2
-#define BT_CTRL  3
+#define LAYER1 3
+#define LAYER2 4
+#define BT_CTRL 5
 
 / {
     keymap {
@@ -31,37 +33,37 @@
         
         layer2 {
             bindings = <
-            &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp CARET           &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &kp EQUAL    &kp PLUS
-            &kp F5       &kp F6       &kp F7       &kp F8       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &kp SEMI
-            &kp F9       &kp F10      &kp F11      &kp F12      &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp CARET           &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &kp EQUAL    &kp PLUS
+                &kp F5       &kp F6       &kp F7       &kp F8       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &kp SEMI
+                &kp F9       &kp F10      &kp F11      &kp F12      &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
             >;
         };        
 
         layer3 {
             bindings = <
-            &kp F1       &kp F2       &kp F3       &kp F4       &kp PSCRN    &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &kp F5       &kp F6       &kp F7       &kp F8       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &kp F9       &kp F10      &kp F11      &kp F12      &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp F1       &kp F2       &kp F3       &kp F4       &kp PSCRN    &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp F5       &kp F6       &kp F7       &kp F8       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp F9       &kp F10      &kp F11      &kp F12      &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
             >;
         };     
    
         layer4 {
             bindings = <
-            &kp F1       &kp F2       &kp F3       &kp F4       &kp PSCRN    &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &kp F5       &kp F6       &kp F7       &kp F8       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &kp F9       &kp F10      &kp F11      &kp F12      &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp F1       &kp F2       &kp F3       &kp F4       &kp PSCRN    &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp F5       &kp F6       &kp F7       &kp F8       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &kp F9       &kp F10      &kp F11      &kp F12      &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
             >;
         };  
 
         bt_control {
             bindings = <
-            &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans       &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &bt BT_PRV   &bt BT_NXT   &trans       &trans
+                &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &trans       &trans       &trans       &trans       &trans       &trans
+                &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &trans       &trans       &trans       &trans
+                &trans       &trans       &trans       &trans       &trans       &trans              &trans       &trans       &bt BT_PRV   &bt BT_NXT   &trans       &trans
             >;
         };
     };
